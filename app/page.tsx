@@ -37,6 +37,13 @@ export default function Home() {
               >
                 LinkedIn
               </a>
+              <a
+  href="/LASFAR fatima-ezzahra Resume.pdf"
+  target="_blank"
+  className="bg-green-600 text-white px-6 py-3 rounded-lg"
+>
+  Download CV
+</a>
             </div>
           </div>
 

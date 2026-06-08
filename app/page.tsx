@@ -241,7 +241,7 @@ export default function Home() {
         Procurement Spend Analysis Using PostgreSQL
       </h3>
       <Image
-  src="/projects/sql analysis.png"
+  src="/projects/sql-analysis.png"
   alt="SQL Procurement Analysis"
   width={500}
   height={300}

@@ -342,7 +342,21 @@ export default function Home() {
           </div>
         </section>
 
-      </section>
+           </section>
+
+      {/* Footer */}
+      <footer className="bg-slate-900 text-white py-6 mt-12">
+        <div className="max-w-6xl mx-auto px-8 text-center">
+          <p>
+            © 2026 Fatima-Ezzahra Lasfar
+          </p>
+
+          <p className="text-slate-400 text-sm mt-2">
+            Built with Next.js, Tailwind CSS, SQL, Python and Power BI
+          </p>
+        </div>
+      </footer>
+
     </main>
   );
 }

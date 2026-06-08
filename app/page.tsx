@@ -18,7 +18,7 @@ export default function Home() {
             </h1>
 
             <p className="text-2xl text-slate-600 mb-8">
-              Supply Chain Specialist • Procurement Professional • Data Analytics Student
+              Supply Chain Specialist • Data Analyst • SAP Certified Consultant
             </p>
 
             <div className="flex gap-4">
@@ -66,15 +66,12 @@ export default function Home() {
           </h2>
 
           <p className="text-lg leading-8 text-slate-700">
-            SAP Certified Implementation Consultant and Purchasing &
-            Supply Chain Specialist with more than 3 years of experience
-            in procurement, inventory management, logistics operations,
-            and business process optimization.
+  SAP Certified Implementation Consultant and Supply Chain Specialist with experience in procurement, inventory management, logistics operations, and business process optimization.
 
-            Currently pursuing a Master's in International Management
-            while expanding my expertise in Data Analytics, SQL,
-            Python, Power BI and SAP S/4HANA.
-          </p>
+  Currently pursuing a Master's in Data Analytics while developing expertise in SQL, PostgreSQL, Python, Power BI, Machine Learning, and Business Intelligence.
+
+  Passionate about transforming complex datasets into actionable insights through analytics, visualization, and data-driven decision making.
+</p>
         </section>
 
 {/* Key Achievements */}
@@ -133,7 +130,10 @@ export default function Home() {
               "Supply Chain",
               "Inventory Management",
               "Negotiation",
-              "Logistics"
+              "Logistics",
+              "PostgreSQL",
+              "Machine Learning"
+
             ].map((skill) => (
               <span
                 key={skill}
@@ -144,6 +144,112 @@ export default function Home() {
             ))}
           </div>
         </section>
+
+{/* Projects */}
+<section className="mb-20">
+  <h2 className="text-3xl font-bold mb-6">
+    Projects
+  </h2>
+
+  <div className="grid md:grid-cols-2 gap-8">
+
+    <div className="bg-white p-6 rounded-xl shadow-sm">
+      <h3 className="font-bold text-xl mb-3">
+        Procurement Spend Analysis Dashboard
+      </h3>
+
+      <p className="text-slate-600 mb-4">
+        Power BI dashboard analyzing procurement spending,
+        supplier performance, lead times and savings opportunities.
+      </p>
+
+      <a
+        href="https://github.com/lasfarfz-pixel/procurement-spend-analysis-dashboard"
+        target="_blank"
+        className="text-blue-700 font-semibold"
+      >
+        View Project →
+      </a>
+    </div>
+
+    <div className="bg-white p-6 rounded-xl shadow-sm">
+      <h3 className="font-bold text-xl mb-3">
+        Supply Chain Performance Dashboard
+      </h3>
+
+      <p className="text-slate-600 mb-4">
+        Interactive Power BI dashboard focused on inventory,
+        supplier contribution and transportation performance.
+      </p>
+
+      <a
+        href="https://github.com/lasfarfz-pixel/powerbi-supply-chain-dashboard"
+        target="_blank"
+        className="text-blue-700 font-semibold"
+      >
+        View Project →
+      </a>
+    </div>
+
+    <div className="bg-white p-6 rounded-xl shadow-sm">
+      <h3 className="font-bold text-xl mb-3">
+        Procurement Spend Analysis Using PostgreSQL
+      </h3>
+
+      <p className="text-slate-600 mb-4">
+        SQL project using PostgreSQL to analyze procurement spend,
+        supplier efficiency, payment status and savings achieved.
+      </p>
+
+      <a
+        href="https://github.com/lasfarfz-pixel/Procurement-Spend-Analysis-SQL"
+        target="_blank"
+        className="text-blue-700 font-semibold"
+      >
+        View Project →
+      </a>
+    </div>
+
+    <div className="bg-white p-6 rounded-xl shadow-sm">
+      <h3 className="font-bold text-xl mb-3">
+        Heart Disease Predictive Analytics
+      </h3>
+
+      <p className="text-slate-600 mb-4">
+        End-to-end machine learning project using SVM and XGBoost
+        with EDA and hyperparameter tuning.
+      </p>
+
+      <a
+        href="https://github.com/lasfarfz-pixel/heart-disease-predictive-analytics"
+        target="_blank"
+        className="text-blue-700 font-semibold"
+      >
+        View Project →
+      </a>
+    </div>
+
+    <div className="bg-white p-6 rounded-xl shadow-sm">
+      <h3 className="font-bold text-xl mb-3">
+        Car Price Prediction
+      </h3>
+
+      <p className="text-slate-600 mb-4">
+        Machine learning project using regression techniques,
+        feature engineering and predictive analytics.
+      </p>
+
+      <a
+        href="https://github.com/lasfarfz-pixel/Car-Price-Prediction"
+        target="_blank"
+        className="text-blue-700 font-semibold"
+      >
+        View Project →
+      </a>
+    </div>
+
+  </div>
+</section>
 
         {/* Experience */}
         <section className="mb-20">

@@ -150,14 +150,21 @@ export default function Home() {
   <h2 className="text-3xl font-bold mb-6">
     Projects
   </h2>
-
   <div className="grid md:grid-cols-2 gap-8">
+  <div className="bg-white p-6 rounded-xl shadow-sm">
 
-    <div className="bg-white p-6 rounded-xl shadow-sm">
-      <h3 className="font-bold text-xl mb-3">
-        Procurement Spend Analysis Dashboard
-      </h3>
-
+  <h3 className="font-bold text-xl mb-3">
+    Procurement Spend Analysis Dashboard
+  </h3>
+  
+    <Image
+  src="/projects/procurement dashboard.png"
+  alt="Procurement Dashboard"
+  width={500}
+  height={300}
+  className="rounded-lg mb-4 w-full"
+ />
+   
       <p className="text-slate-600 mb-4">
         Power BI dashboard analyzing procurement spending,
         supplier performance, lead times and savings opportunities.
@@ -176,7 +183,13 @@ export default function Home() {
       <h3 className="font-bold text-xl mb-3">
         Supply Chain Performance Dashboard
       </h3>
-
+<Image
+  src="/projects/supply-chain.png"
+  alt="Supply Chain Dashboard"
+  width={500}
+  height={300}
+  className="rounded-lg mb-4 w-full"
+/>
       <p className="text-slate-600 mb-4">
         Interactive Power BI dashboard focused on inventory,
         supplier contribution and transportation performance.
@@ -195,6 +208,13 @@ export default function Home() {
       <h3 className="font-bold text-xl mb-3">
         Procurement Spend Analysis Using PostgreSQL
       </h3>
+      <Image
+  src="/projects/sql analysis.png"
+  alt="SQL Procurement Analysis"
+  width={500}
+  height={300}
+  className="rounded-lg mb-4 w-full"
+/>
 
       <p className="text-slate-600 mb-4">
         SQL project using PostgreSQL to analyze procurement spend,
@@ -211,14 +231,22 @@ export default function Home() {
     </div>
 
     <div className="bg-white p-6 rounded-xl shadow-sm">
-      <h3 className="font-bold text-xl mb-3">
-        Heart Disease Predictive Analytics
-      </h3>
+  <h3 className="font-bold text-xl mb-3">
+    Heart Disease Predictive Analytics
+  </h3>
 
-      <p className="text-slate-600 mb-4">
-        End-to-end machine learning project using SVM and XGBoost
-        with EDA and hyperparameter tuning.
-      </p>
+  <Image
+    src="/projects/roc auc.png"
+    alt="Heart Disease Predictive Analytics"
+    width={500}
+    height={300}
+    className="rounded-lg mb-4 w-full"
+  />
+
+  <p className="text-slate-600 mb-4">
+    End-to-end machine learning project using SVM and XGBoost
+    with EDA and hyperparameter tuning.
+  </p>
 
       <a
         href="https://github.com/lasfarfz-pixel/heart-disease-predictive-analytics"
@@ -230,11 +258,19 @@ export default function Home() {
     </div>
 
     <div className="bg-white p-6 rounded-xl shadow-sm">
-      <h3 className="font-bold text-xl mb-3">
-        Car Price Prediction
-      </h3>
+  <h3 className="font-bold text-xl mb-3">
+    Car Price Prediction
+  </h3>
 
-      <p className="text-slate-600 mb-4">
+  <Image
+    src="/projects/horsepower_vs_price.png"
+    alt="Car Price Prediction"
+    width={500}
+    height={300}
+    className="rounded-lg mb-4 w-full"
+  />
+
+  <p className="text-slate-600 mb-4">
         Machine learning project using regression techniques,
         feature engineering and predictive analytics.
       </p>

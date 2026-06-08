@@ -3,6 +3,36 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="min-h-screen bg-slate-50 text-slate-900">
+      {/* Navigation */}
+<nav className="sticky top-0 bg-white shadow-sm z-50">
+  <div className="max-w-6xl mx-auto px-8 py-4 flex justify-center gap-8">
+
+    <a href="#about" className="hover:text-blue-700">
+      About
+    </a>
+
+    <a href="#skills" className="hover:text-blue-700">
+      Skills
+    </a>
+
+    <a href="#projects" className="hover:text-blue-700">
+      Projects
+    </a>
+
+    <a href="#experience" className="hover:text-blue-700">
+      Experience
+    </a>
+
+    <a href="#education" className="hover:text-blue-700">
+      Education
+    </a>
+
+    <a href="#contact" className="hover:text-blue-700">
+      Contact
+    </a>
+
+  </div>
+</nav>
       <section className="max-w-6xl mx-auto px-8 py-16">
 
         {/* Hero */}
@@ -60,7 +90,7 @@ export default function Home() {
         </div>
 
         {/* About */}
-        <section className="mb-20">
+       <section id="about" className="mb-20">
           <h2 className="text-3xl font-bold mb-6">
             About Me
           </h2>
@@ -114,7 +144,7 @@ export default function Home() {
 </section>
 
         {/* Skills */}
-        <section className="mb-20">
+        <section id="skills" className="mb-20">
           <h2 className="text-3xl font-bold mb-6">
             Skills
           </h2>
@@ -146,7 +176,7 @@ export default function Home() {
         </section>
 
 {/* Projects */}
-<section className="mb-20">
+<section id="projects" className="mb-20">
   <h2 className="text-3xl font-bold mb-6">
     Projects
   </h2>
@@ -173,6 +203,7 @@ export default function Home() {
       <a
         href="https://github.com/lasfarfz-pixel/procurement-spend-analysis-dashboard"
         target="_blank"
+        rel="noopener noreferrer"
         className="text-blue-700 font-semibold"
       >
         View Project →
@@ -198,6 +229,7 @@ export default function Home() {
       <a
         href="https://github.com/lasfarfz-pixel/powerbi-supply-chain-dashboard"
         target="_blank"
+        rel="noopener noreferrer"
         className="text-blue-700 font-semibold"
       >
         View Project →
@@ -224,6 +256,7 @@ export default function Home() {
       <a
         href="https://github.com/lasfarfz-pixel/Procurement-Spend-Analysis-SQL"
         target="_blank"
+        rel="noopener noreferrer"
         className="text-blue-700 font-semibold"
       >
         View Project →
@@ -251,6 +284,7 @@ export default function Home() {
       <a
         href="https://github.com/lasfarfz-pixel/heart-disease-predictive-analytics"
         target="_blank"
+        rel="noopener noreferrer"
         className="text-blue-700 font-semibold"
       >
         View Project →
@@ -278,6 +312,7 @@ export default function Home() {
       <a
         href="https://github.com/lasfarfz-pixel/Car-Price-Prediction"
         target="_blank"
+        rel="noopener noreferrer"
         className="text-blue-700 font-semibold"
       >
         View Project →
@@ -288,93 +323,154 @@ export default function Home() {
 </section>
 
         {/* Experience */}
-        <section className="mb-20">
-          <h2 className="text-3xl font-bold mb-6">
-            Professional Experience
-          </h2>
+<section id="experience" className="mb-20">
+  <h2 className="text-3xl font-bold mb-6">
+    Professional Experience
+  </h2>
 
-          <div className="space-y-5">
+  <div className="space-y-5">
 
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="font-bold text-xl">
-                Logistics Assistant — Amazon
-              </h3>
-              <p className="text-slate-500">
-                Berlin | 2023–2024
-              </p>
-            </div>
+    <div className="bg-white p-6 rounded-xl shadow-sm">
+      <h3 className="font-bold text-xl">
+        Logistics Assistant — Amazon
+      </h3>
 
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="font-bold text-xl">
-                Purchasing & Logistics Coordinator — ALFAHORIZON
-              </h3>
-              <p className="text-slate-500">
-                Casablanca | 2021–2022
-              </p>
-            </div>
+      <p className="text-slate-500 mb-3">
+        Berlin, Germany | 2023–2024
+      </p>
 
-            <div className="bg-white p-6 rounded-xl shadow-sm">
-              <h3 className="font-bold text-xl">
-                Sales Representative — Auto DANA
-              </h3>
-              <p className="text-slate-500">
-                Marrakech | 2022
-              </p>
-            </div>
+      <ul className="list-disc pl-5 text-slate-700 space-y-1">
+        <li>Maintained 99.9% order accuracy in a high-volume warehouse environment.</li>
+        <li>Exceeded productivity targets by 10% during peak operational periods.</li>
+        <li>Resolved inventory discrepancies and supported daily dispatch operations.</li>
+      </ul>
+    </div>
 
-          </div>
-        </section>
+    <div className="bg-white p-6 rounded-xl shadow-sm">
+      <h3 className="font-bold text-xl">
+        Purchasing & Logistics Coordinator — ALFAHORIZON
+      </h3>
+
+      <p className="text-slate-500 mb-3">
+        Casablanca, Morocco | 2021–2022
+      </p>
+
+      <ul className="list-disc pl-5 text-slate-700 space-y-1">
+        <li>Reduced procurement costs by 12% through supplier negotiations and sourcing optimization.</li>
+        <li>Improved inventory accuracy to 98% across more than 1,000 SKUs.</li>
+        <li>Expanded the supplier network and improved procurement efficiency.</li>
+      </ul>
+    </div>
+
+    <div className="bg-white p-6 rounded-xl shadow-sm">
+      <h3 className="font-bold text-xl">
+        Sales Representative — Auto DANA
+      </h3>
+
+      <p className="text-slate-500 mb-3">
+        Marrakech, Morocco | 2022
+      </p>
+
+      <ul className="list-disc pl-5 text-slate-700 space-y-1">
+        <li>Increased monthly sales by 15% through CRM-driven lead management.</li>
+        <li>Managed customer relationships and after-sales support activities.</li>
+        <li>Analyzed customer trends and improved sales conversion rates.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
 
 {/* Education & Certifications */}
-<section className="mb-20">
+<section id="education" className="mb-20">
   <h2 className="text-3xl font-bold mb-6">
     Education & Certifications
   </h2>
 
   <div className="space-y-5">
 
-     <div className="bg-white p-6 rounded-xl shadow-sm">
+    <div className="bg-white p-6 rounded-xl shadow-sm">
       <h3 className="font-bold text-xl">
         M.Sc. Data Analytics
       </h3>
+
       <p className="text-slate-500">
         Berlin School of Business and Innovation • 2026–2027
       </p>
+
+      <p className="mt-2 text-slate-700">
+        Focus areas: Data Analytics, Machine Learning, Business Intelligence and Data Visualization.
+      </p>
     </div>
-    
-    
+
     <div className="bg-white p-6 rounded-xl shadow-sm">
       <h3 className="font-bold text-xl">
         M.A. International Management
       </h3>
+
       <p className="text-slate-500">
         IU International University • 2023–2025
       </p>
+
+      <p className="mt-2 text-slate-700">
+        International business, strategic management and global operations.
+      </p>
     </div>
 
-   
+    <div className="bg-white p-6 rounded-xl shadow-sm">
+      <h3 className="font-bold text-xl">
+        Master's Degree in Logistics
+      </h3>
+
+      <p className="text-slate-500">
+        National School of Business and Management, Morocco • 2014–2016
+      </p>
+    </div>
 
     <div className="bg-white p-6 rounded-xl shadow-sm">
       <h3 className="font-bold text-xl">
         SAP Certified Implementation Consultant
       </h3>
+
       <p className="text-slate-500">
-        SAP Business Suite End-to-End Business Processes • 2026–2027
+        End-to-End Business Processes for SAP Business Suite
+      </p>
+
+      <p className="mt-2 text-slate-700">
+        SAP S/4HANA business process implementation and enterprise systems.
       </p>
     </div>
 
   </div>
 </section>
         {/* Contact */}
-        <section>
+        <section id="contact">
           <h2 className="text-3xl font-bold mb-6">
             Contact
           </h2>
 
           <div className="bg-white p-8 rounded-xl shadow-sm">
-            <p className="mb-3">📍 Berlin, Germany</p>
-            <p className="mb-3">📧 lasfarfz@gmail.com</p>
-            <p>🌐 github.com/lasfarfz-pixel</p>
+           <p className="mb-3">📍 Berlin, Germany</p>
+
+<p className="mb-3">
+  📧 <a
+    href="mailto:lasfarfz@gmail.com"
+    className="text-blue-700"
+  >
+    lasfarfz@gmail.com
+  </a>
+</p>
+
+<p>
+  🌐 <a
+    href="https://github.com/lasfarfz-pixel"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-700"
+  >
+    github.com/lasfarfz-pixel
+  </a>
+</p>
           </div>
         </section>
 
